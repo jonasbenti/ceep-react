@@ -16,6 +16,11 @@
     align-items: center;
   }
   
+  .card-nota_id {
+    margin-right: 12px;
+    font-size: 2em;
+  }
+
   .card-nota_texto {
     margin-top: 8px;
     font-size: 1em;
