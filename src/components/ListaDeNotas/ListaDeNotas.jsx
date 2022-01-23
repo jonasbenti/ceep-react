@@ -3,14 +3,16 @@ import CardNota from "../CardNota";
 import "./estilo.css";
 
 class ListaDeNotas extends Component {
+
     render() {
         return (
             <ul className="lista-notas">
-                {Array.of("Trabalho", "Trabalho2", "Estudos").map((categoria, index) => {
+                {this.props.notas.map((nota, index) => {
                     return (
                         <li className="lista-notas_item" key={index}>
                             {/* <div>{categoria}</div> */}
-                            <CardNota/>
+                            {/* {console.log(nota)} */}
+                            <CardNota id={nota.id} titulo={nota.titulo} texto={nota.texto}/>
                         </li>   
                     );
                 })}                             
